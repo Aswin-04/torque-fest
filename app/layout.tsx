@@ -1,13 +1,28 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import { Inter} from 'next/font/google';
+import { Inter, Geist, Geist_Mono, Space_Grotesk} from 'next/font/google';
 import Header from "@/sections/header";
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
 });
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const spaceGrotesk = Space_Grotesk({
+  variable: '--font-grotesk',
+  subsets: ['latin']
+})
 
 export const metadata: Metadata = {
   title: "Torque Fest ",
@@ -20,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.className} dark`}>
+    <html lang="en" className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} dark`}>
       <body>
         <Header></Header>
         {children}
