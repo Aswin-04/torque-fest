@@ -10,10 +10,11 @@ import closeMenuIcon from '@/public/logos/close-menu.svg'
 
 const Header = () => {
   const pathname = usePathname()
+  console.log(pathname)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <nav>
-      <div className="fixed z-50 top-0 left-0 w-full pl-4 pr-10 py-2 text-primary border-b border-primary/20 text-lg backdrop-blur-xl">
+      <div className="fixed z-50 top-0 left-0 w-full pl-4 pr-10 py-2 border-b border-primary/20 text-lg backdrop-blur-xl">
         <div className="max-container flex justify-between items-center">
           <Link href={'/'} className='w-32 cursor-pointer'>
             <Image src={mainLogo} alt='main-logo'></Image>
@@ -22,7 +23,7 @@ const Header = () => {
           <div className="max-lg:hidden">
             <ul className="flex gap-12 font-medium">
               {navLinks.map((navLink) => (
-                <li key={navLink.label} className={`cursor-pointer relative nav-item ${pathname == navLink.to ? 'active' : ''}`}>
+                <li key={navLink.label} className={`text-accent/70 cursor-pointer relative nav-item ${(navLink.to !== '/' && pathname && pathname.startsWith(navLink.to)) || pathname == navLink.to ? 'active' : ''}`}>
                   <Link href={navLink.to}>{navLink.label}</Link>
                 </li>
               ))}
@@ -36,10 +37,10 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className={`backdrop-blur-sm lg:hidden fixed top-[113px] left-0 right-0 ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'} transition-all duration-500 ease-out`}>
+      <div className={`z-50 backdrop-blur-sm lg:hidden fixed top-[113px] left-0 right-0 ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'} transition-all duration-500 ease-out`}>
         <ul className="bg-secondary/1  text-xl pb-30 h-screen  font-medium flex flex-col justify-center items-center gap-16">
           {navLinks.map((navLink) => (
-            <li key={navLink.label} className={`text-primary cursor-pointer relative nav-item ${pathname == navLink.to ? 'active' : ''}`}>
+            <li key={navLink.label} className={`text-accent/70 cursor-pointer relative nav-item ${(navLink.to !== '/' && pathname && pathname.startsWith(navLink.to)) ||  pathname == navLink.to ? 'active' : ''}`}>
               <Link href={navLink.to} onClick={() => setIsMenuOpen(false)}>{navLink.label}</Link>
             </li>
           ))}
