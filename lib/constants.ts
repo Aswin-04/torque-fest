@@ -79,7 +79,7 @@ export {
 
 export const eventsContent = {
   title: "Exciting Events",
-  description: "Join us to experience engineering excellence at SAIMECH'24 - MECHAVERSE! Engage in events like cutting-edge workshops with hands-on demonstrations, Enthralling events of Tech Titans, Entertaining events of Techno fest along with immersive activites.",
+  description: "Join us to experience engineering excellence at SAIMECH’25 – TORQUEFEST! A perfect blend of technology, collaboration through interactive workshops, exciting technical and Non technical event along with immersive activities.",
   linkLabel: "Explore Events",
   linkTo: "/events",
   img: eventsImg,
@@ -616,7 +616,7 @@ export const staffCoordinatorsProfiles = [
     imgAlt: "prabhuSirImg",
     name: "Mr. V. Prabhu",
     year: "Assistant Professor",
-    linkedIn: "https://www.linkedin.com/in/parswajinan-c-163875143/",
+    linkedIn: "https://www.linkedin.com/in/prabhu-v-b5b507165/",
   },
 
   {
@@ -625,7 +625,7 @@ export const staffCoordinatorsProfiles = [
     name: "	Mr. S.K. Dinesh Kumar",
     year: "Assistant Professor",
     linkedIn:
-      "https://www.linkedin.com/in/ramanujam-rajaprasanna/?originalSubdomain=in",
+      "https://www.linkedin.com/in/dinesh-kumar-s-k-46608339/",
   },
 ];
 
@@ -636,42 +636,42 @@ export const studentCoordinatorsProfiles = [
     imgAlt: "sangeethImg",
     name: "Sangeeth V",
     year: "President",
-    linkedIn: "https://www.linkedin.com/in/sakthi-keerthana-m-h-732b17271/",
+    linkedIn: "https://www.linkedin.com/in/sangeeth74/",
   },
 
   {
     id: 2,
     img: saiPic,
     imgAlt: "saiRohithImg",
-    name: "Sai Rohith",
+    name: "Sai Rohith V",
     year: "Vice President",
-    linkedIn: "https://www.linkedin.com/in/priyanka-a-n-59760a323/",
+    linkedIn: "https://www.linkedin.com/in/sairohithchidatmav/",
   },
 
   {
     id: 3,
     img: mahentraPic,
     imgAlt: "mahentraImg",
-    name: "Mahentra KP",
+    name: "Mahenthra KP",
     year: "Secretary",
-    linkedIn: "https://www.linkedin.com/in/aajaykumar07/",
+    linkedIn: "https://www.linkedin.com/in/mahenthra-kp-7b830b317/",
   },
 
   {
     id: 4,
     img: sriramPic,
     imgAlt: "sriramImg",
-    name: "Sriram",
+    name: "Shriram R",
     year: "Outreach",
-    linkedIn: "https://www.linkedin.com/in/lakshman-gopalakrishnan-561270229/",
+    linkedIn: "https://www.linkedin.com/in/allforgood/",
   },
 
   {
     id: 5,
     img: priyankaPic,
     imgAlt: "priyankaImg",
-    name: "Priyanka",
+    name: "Priyanka S",
     year: "Treasurer",
-    linkedIn: "https://www.linkedin.com/in/nithish-anand-2a144821b/",
+    linkedIn: "https://www.linkedin.com/in/priyanka-s-16b6522b7/",
   },
 ];

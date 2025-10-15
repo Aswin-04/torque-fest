@@ -3,8 +3,9 @@ import Image from "next/image";
 import { Phone, Mail } from "lucide-react";
 
 const phoneNumbers = [
-  "+91 98847 17979",
-  "+91 97908 17205",
+  "+91 80981 32667",
+  "+91 63694 03809",
+  "+91 99629 10748 "
 ];
 
 const Contact = () => {
@@ -25,7 +26,7 @@ const Contact = () => {
             ))}
             <li key={"email"} className="flex  gap-2 font-mono text-primary">
               <Mail/>
-              <p>saimech25@gmail.com</p>
+              <p>sympo.mech@sairam.edu.in</p>
             </li>
           </ul>
         </div>
@@ -56,7 +57,7 @@ const Contact = () => {
               ))}
               <li key={"email"} className="flex  gap-2 font-mono text-primary">
                 <Mail/>
-                <p>saimech25@gmail.com</p>
+                <p>sympo.mech@sairam.edu.in</p>
               </li>
             </ul>
           </div>

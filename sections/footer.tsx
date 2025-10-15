@@ -83,20 +83,20 @@ const Footer = () => {
               </li>
               <li className="mb-1 pl-[1px] flex items-center gap-x-2 text-white-400 hover:text-primary transition duration-250 ease-in-out">
                 <Mail size={22} />
-                <p>mechaverse@sairam.edu.in</p>
+                <p>sympo.mech@sairam.edu.in</p>
               </li>
               <li className="pl-[2px] text-start text-sm text-white-400 font-poppins tracking-normal flex flex-col justify-normal gap-2 mt-3">
                 <p className=" mb-1 flex items-center gap-2 hover:text-primary transition duration-250 ease-in-out">
                   <Phone size={20} />
-                  <span>+91 98847 17979</span>
+                  <span>+91 80981 32667</span>
                 </p>
                 <p className="mb-1 flex items-center gap-2 hover:text-primary transition duration-250 ease-in-out">
                   <Phone size={20} />
-                  <span>+91 97908 17205</span>
+                  <span>+91 63694 03809</span>
                 </p>
                 <p className="flex items-center gap-2 hover:text-primary transition duration-250 ease-in-out">
                   <Phone size={20} />
-                  <span>+91 80560 88096</span>
+                  <span>+91 99629 10748</span>
                 </p>
               </li>
             </ul>
