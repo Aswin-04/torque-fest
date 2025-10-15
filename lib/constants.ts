@@ -506,7 +506,7 @@ export const faqContent = [
   },
   {
     question: "Is accommodation facilities available for participants ?",
-    answer: "Yes, Participants from other districts ( Chennai, Chengalpattu, Kancheepuram, Thiruvallur) has accommodation facility. NOTE: Need a prior information from participants for accommodation."
+    answer: "Participants from districts other than Chennai, Chengalpattu, Kancheepuram, and Thiruvallur will be provided accommodation facilities. However, prior intimation from the participants is required to make the necessary arrangements."
   }
 ];
 
