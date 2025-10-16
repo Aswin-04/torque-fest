@@ -3,6 +3,7 @@ import { OverviewProps } from '@/types/types'
 import Image from 'next/image'
 import React from 'react'
 import {ArrowRight} from 'lucide-react'
+import Link from 'next/link'
 
 const Overview = ({content}: {content: OverviewProps} ) => {
   return (
@@ -34,7 +35,9 @@ const Overview = ({content}: {content: OverviewProps} ) => {
             {content.description}
           </p>   
           <div className="inline-flex max-w-sm mx-auto mt-6">
-            <Button>{content.linkLabel}</Button>
+            <Link href={content.linkTo}>
+              <Button>{content.linkLabel}</Button>
+            </Link>
           </div>         
         </div>
       
