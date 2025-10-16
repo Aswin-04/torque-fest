@@ -18,7 +18,9 @@ const Overview = ({content}: {content: OverviewProps} ) => {
             {content.description}
           </p>
           <div className="inline-flex max-w-sm mx-auto mt-6">
-            <Button>{content.linkLabel}</Button>
+            <Link href={content.linkTo} >
+              <Button>{content.linkLabel}</Button>
+            </Link>
           </div>       
         </div>
       </div>
