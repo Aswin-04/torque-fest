@@ -160,7 +160,7 @@ const EventDetailsRenderer = ({ event }: {event: Event}) => {
                 </Link>
 
                 <a
-                  href="https://docs.google.com/forms/d/1d4tAfCbW1iU6ILU8QhrMMRq-wx9ojQKEgZrqnvB5oRE/previewResponse"
+                  href="https://forms.gle/Y2JgsG5ey7n9zcJTA"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
