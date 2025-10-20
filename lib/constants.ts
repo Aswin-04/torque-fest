@@ -41,7 +41,7 @@ import abishekPic from '@/public/event-coordinators/AbishekPhoto.jpg'
 import sangeethPic from '@/public/our-team/student-coordinators/sangeeth.webp'
 import saiPic from '@/public/our-team/student-coordinators/sai.webp'
 import mahentraPic from '@/public/our-team/student-coordinators/mahentra.webp'
-import sriramPic from '@/public/our-team/student-coordinators/sriram.webp'
+import sriramPic from '@/public/our-team/student-coordinators/shriram.jpg'
 import priyankaPic from '@/public/our-team/student-coordinators/priyanka.webp'
 
 import ceoPic from '@/public/our-team/staffs/ceo.jpg'
@@ -1018,7 +1018,7 @@ export const studentCoordinatorsProfiles = [
     img: sriramPic,
     imgAlt: "sriramImg",
     name: "Shriram R",
-    year: "Outreach",
+    year: "Student Chief Ambassador",
     linkedIn: "https://www.linkedin.com/in/allforgood/",
   },
 
