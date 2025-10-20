@@ -1,11 +1,11 @@
 import React from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import { Event } from "@/lib/types";
+import { EventDetails } from "@/lib/types";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./button";
 
-const EventDetailsRenderer = ({ event }: {event: Event}) => {
+const EventDetailsRenderer = ({ event }: {event: EventDetails}) => {
   return (
     <main className="relative">
       <section className="max-container mx-auto text-accent/80">
@@ -76,10 +76,37 @@ const EventDetailsRenderer = ({ event }: {event: Event}) => {
                   </div>
                 )}
 
+                {event.staffCoordinators && event.staffCoordinators.length > 0 && (
+                  <div className="bg-zinc-950 p-4 rounded-lg shadow-sm mt-5">
+                    <h3 className="h3-text">Staff Coordinators</h3>
+                    <div className="flex flex-wrap gap-x-4 gap-y-2">
+                      {event.staffCoordinators.map((coordinator, index) => (
+                        <div
+                          className="flex flex-col items-start md:items-start lg:items-center"
+                          key={index}
+                        >
+                          <div className="w-[120px] h-[120px] rounded-full overflow-hidden shadow-lg mt-4 mb-4 max-xs:w-[85px] max-xs:h-[85px] bg-zinc-900">
+                            {coordinator.image && (
+                              <Image
+                                src={coordinator.image}
+                                alt={coordinator.name}
+                                className="w-full h-full object-cover"
+                              />
+                            )}
+                          </div>
+                          <p className="mb-2 max-sm:text-xs text-center self-center">
+                            {coordinator.name}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+              )}
+
               {/* Coordinators */}
               {event.eventCoordinators && event.eventCoordinators.length > 0 && (
                 <div className="bg-zinc-950 p-4 rounded-lg shadow-sm mt-5">
-                  <h3 className="h3-text">Coordinators</h3>
+                  <h3 className="h3-text">Student Coordinators</h3>
                   <div className="flex flex-wrap gap-x-4 gap-y-2">
                     {event.eventCoordinators.map((coordinator, index) => (
                       <div

@@ -1,5 +1,10 @@
 import { StaticImageData } from "next/image";
 
+interface StaffCoordinators {
+  image: string | StaticImageData,
+  name: string,
+}
+
 interface EventCoordinator {
   image: string | StaticImageData;
   name: string;
@@ -11,7 +16,7 @@ interface GeneralInstruction {
   points: string[];
 }
 
-export interface Event {
+export interface EventDetails {
   id: number;
   logo: string | StaticImageData ; 
   title: string;
@@ -19,7 +24,14 @@ export interface Event {
   guidelines: string[];
   generalInstructions?: GeneralInstruction[]; // optional (only present in some events)
   eventCoordinators: EventCoordinator[];
+  staffCoordinators: StaffCoordinators[]
   notes: string[];
+}
+
+export interface Event {
+  id: number,
+  logo: StaticImageData,
+  title: string,
 }
 
 
